@@ -9,11 +9,11 @@ import boto3
 import os
 import time
 
-REGION = 'us-east-1'
-rds_host= "rds-cnvacpaur01-cluster.cluster-cap97krsw3kz.us-east-1.rds.amazonaws.com"
-name = "svcacpaurdb"
-password = "Ka07EeSSxeT5guyBxxpz"
-db_name = "POCDBAurora"
+REGION = ''
+rds_host= "" 
+name = ""
+password = ""
+db_name = ""
 conn = pymysql.connect(rds_host, user=name, passwd=password, db=db_name, connect_timeout=5)
     
 def main(event, context):
